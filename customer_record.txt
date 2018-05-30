@@ -1,0 +1,66 @@
+2. Process customer record
+A program is required to read a customer’s name, a purchase amount and a tax code. 
+The tax code has been validated and will be one of the following:
+    0  tax exempt (0%)
+    1  state sales tax only (3%)
+    2  federal and state sales tax (5%)
+    3  special sales tax (7%)
+The program must then compute the sales tax and the total amount due,and print the customer’s name, purchase amount, sales tax and total amount due.
+
+inputs
+
+	customer_name
+	purchase_ammount
+	tax_code
+
+outputs
+	customer_name
+	purchase_ammount
+	sales_tax
+	total_ammount_due
+
+Processing steps
+get customer_name, purchase_ammount, tax-code
+
+set tax_code_percent to 0
+if tax-code =1 then
+	tax_code_percent =3
+else if tax_code =2 then
+	tax_code_percent= 5
+else if tax_code =3 then
+	tax_code_percent= 7
+else if tax_code =0 then
+	tax_code_percent =0
+else
+	Print "invalid tax code"
+	
+tax = (purchase_ammount * tax_code_percent)/100
+total_ammount_due = purchase_ammount + tax
+print "customer_name: " customer_name
+print "Purchase ammount: " Purchase ammount
+print "sales_tax: " tax
+Print "total ammount due" total_ammount_due
+
+Psuedocode
+set customer_name to (get customer_name from user)
+set purchase_ammount to (get purchase_ammount from user)
+set tax_code to ( get tax_code from User
+
+set tax_code_percent to 0
+if tax-code =1 then
+	tax_code_percent =3
+else if tax_code =2 then
+	tax_code_percent= 5
+else if tax_code =3 then
+	tax_code_percent= 7
+else if tax_code =0 then
+	tax_code_percent =0
+else
+	Print "invalid tax code"
+	
+tax = (purchase_ammount * tax_code_percent)/100
+total_ammount_due = purchase_ammount + tax
+print "customer_name: " customer_name
+print "Purchase ammount: " Purchase ammount
+print "sales_tax: " tax
+Print "total ammount due" total_ammount_due
